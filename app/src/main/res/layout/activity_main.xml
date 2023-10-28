@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Animation"
+        android:textSize="40dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.057" />
+    <ImageView
+        android:id="@+id/perform"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_margin="20dp"
+        android:src="@drawable/ic_baseline_adb_24"
+        app:layout_constraintEnd_toEndOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView"/>
+<!--    <View-->
+<!--        android:id="@+id/perform"-->
+<!--        android:layout_width="200dp"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_margin="20dp"-->
+<!--        android:background="#ED4848"-->
+<!--        app:layout_constraintEnd_toEndOf="@+id/textView"-->
+<!--        app:layout_constraintStart_toStartOf="@+id/textView"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/textView" />-->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        app:layout_constraintTop_toBottomOf="@+id/perform"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        >
+<!--Page 1 Start-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Bounce"
+                android:textSize="20dp"
+                android:layout_margin="5dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/InDown"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="InDown"
+                    android:background="@drawable/b1"
+                    android:layout_margin="5dp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/InUp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="InUp"
+                    android:background="@drawable/b2"
+                    android:layout_margin="5dp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/InLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="InLeft"
+                    android:background="@drawable/b3"
+                    android:layout_margin="5dp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/InRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="InRight"
+                    android:background="@drawable/b4"
+                    android:layout_margin="5dp" />
+            </LinearLayout>
+        <LinearLayout
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/In"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In"
+                android:background="@drawable/b1"
+                android:layout_margin="5dp" />
+        </LinearLayout>
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical">-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Attention"
+                android:textSize="20dp"
+                android:layout_margin="5dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/bounce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Bounce"
+                    android:background="@drawable/b1"
+                    android:layout_margin="5dp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Flash"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Flash"
+                    android:background="@drawable/b2"
+                    android:layout_margin="5dp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Pulse"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Pulse"
+                    android:background="@drawable/b3"
+                    android:layout_margin="5dp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Ruberband"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ruberband"
+                    android:background="@drawable/b4"
+                    android:layout_margin="5dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Shake"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Shake"
+                    android:background="@drawable/b3"
+                    android:layout_margin="5dp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Standup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Standup"
+                    android:background="@drawable/b4"
+                    android:layout_margin="5dp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Swing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Swing"
+                    android:background="@drawable/b1"
+                    android:layout_margin="5dp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Tada"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tada"
+                    android:background="@drawable/b2"
+                    android:layout_margin="5dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Wave"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wave"
+                    android:background="@drawable/b3"
+                    android:layout_margin="5dp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Wobble"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/b4"
+                    android:text="Wobble" />
+            </LinearLayout>
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical">-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Fade"
+                android:textSize="20dp"
+                android:layout_margin="5dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/InDown_F"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="InDown"
+                    android:background="@drawable/b1"
+                    android:layout_margin="5dp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/InUp_F"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="InUp"
+                    android:background="@drawable/b2"
+                    android:layout_margin="5dp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/InLeft_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="InLeft"
+                    android:background="@drawable/b3"
+                    android:layout_margin="5dp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/InRight_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="InRight"
+                    android:background="@drawable/b4"
+                    android:layout_margin="5dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/OutDown_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OutDown"
+                    android:background="@drawable/b3"
+                    android:layout_margin="5dp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/OutUp_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OutUp"
+                    android:background="@drawable/b4"
+                    android:layout_margin="5dp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/OutLeft_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OutLeft"
+                    android:background="@drawable/b1"
+                    android:layout_margin="5dp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/OutRight_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OutRight"
+                    android:background="@drawable/b2"
+                    android:layout_margin="5dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/In_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="IN"
+                    android:background="@drawable/b3"
+                    android:layout_margin="5dp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/out_f"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/b4"
+                    android:text="Out" />
+            </LinearLayout>
+<!--        </LinearLayout>-->
+<!--        <LinearLayout-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="match_parent"-->
+<!--            android:orientation="vertical">-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Flip"
+                android:textSize="20dp"
+                android:layout_margin="5dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/InX"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="InX"
+                    android:background="@drawable/b1"
+                    android:layout_margin="5dp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/InY"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="InY"
+                    android:background="@drawable/b2"
+                    android:layout_margin="5dp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/OutX"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OutX"
+                    android:background="@drawable/b3"
+                    android:layout_margin="5dp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/OutY"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OutY"
+                    android:background="@drawable/b4"
+                    android:layout_margin="5dp" />
+            </LinearLayout>
+<!--            ..................-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Rotate"
+                android:textSize="20dp"
+                android:layout_margin="5dp" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/InDownLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="InDownLeft"
+                    android:background="@drawable/b1"
+                    android:layout_margin="5dp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/InDownRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="InDownRight"
+                    android:background="@drawable/b2"
+                    android:layout_margin="5dp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/InUpLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="InUpLeft"
+                    android:background="@drawable/b3"
+                    android:layout_margin="5dp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/InUpRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="InUpRight"
+                    android:background="@drawable/b4"
+                    android:layout_margin="5dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/OutDownLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OutDownLeft"
+                    android:background="@drawable/b3"
+                    android:layout_margin="5dp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/OutDownRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OutDownRight"
+                    android:background="@drawable/b4"
+                    android:layout_margin="5dp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/OutUpLeft"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OutUpLeft"
+                    android:background="@drawable/b1"
+                    android:layout_margin="5dp" />
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/OutUpRight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OutUpRight"
+                    android:background="@drawable/b2"
+                    android:layout_margin="5dp" />
+            </LinearLayout>
+            <LinearLayout
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/In_Ro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="In"
+                    android:background="@drawable/b3"
+                    android:layout_margin="5dp"
+                    />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/Out_Ro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:background="@drawable/b4"
+                    android:text="Out" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
